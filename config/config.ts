@@ -1,11 +1,13 @@
-import { menus } from './hooks';
 import { defineConfig } from 'dumi';
+import { menus } from './hooks';
 // tslint:disable-next-line:no-var-requires
 const packages = require('../package.json');
 
 export default defineConfig({
   title: 'react-whooks',
   mode: 'site',
+  publicPath: '/react-whooks/',
+  base: '/react-whooks',
   logo: '/logo.png',
   favicon: '/favicon.ico',
   outputPath: 'build',
@@ -60,24 +62,4 @@ export default defineConfig({
     ],
     '/hooks': menus,
   },
-  // more config: https://d.umijs.org/config
-  scripts: [
-    'https://s4.cnzz.com/z_stat.php?id=1278992092&web_id=1278992092',
-    `
-  const insertVersion = function(){
-    const dom = document.createElement('span');
-    dom.id = 'logo-version';
-    dom.innerHTML = '${packages.version}';
-    const logo = document.querySelector('.__dumi-default-navbar-logo');
-    if(logo){
-      logo.parentNode.insertBefore(dom, logo.nextSibling);
-    }else{
-      setTimeout(()=>{
-        insertVersion();
-      }, 1000)
-    }
-  }
-  insertVersion();
-  `,
-  ],
 });

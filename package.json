@@ -3,7 +3,9 @@
   "name": "react-whooks",
   "scripts": {
     "start": "dumi dev",
-    "build": "dumi build",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
   },
   "main": "dist/index.js",
@@ -36,6 +38,7 @@
     "antd": "^4.19.3",
     "classnames": "^2.3.1",
     "dumi": "^1.0.13",
+    "gh-pages": "^3.0.0",
     "lint-staged": "^10.0.7",
     "mockdate": "^3.0.5",
     "mockjs": "^1.1.0",
