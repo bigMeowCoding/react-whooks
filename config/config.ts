@@ -45,7 +45,7 @@ export default defineConfig({
   navs: [
     { title: '指南', path: '/guide' },
     { title: 'Hooks', path: '/hooks' },
-    { title: 'GitLab', path: 'https://gitlab.com/2338/hooks' },
+    { title: 'GitHub', path: 'https://github.com/bigMeowCoding/react-whooks' },
   ],
   menus: {
     '/': [
