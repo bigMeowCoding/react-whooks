@@ -1,0 +1,22 @@
+.coreContainer {
+  .scrollWrapper {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    .scrollItem {
+      height: 50px;
+      line-height: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      &:nth-child(2n) {
+        background-color: #f3f5f7;
+      }
+
+      &:nth-child(2n + 1) {
+        background-color: #42b983;
+      }
+    }
+  }
+}

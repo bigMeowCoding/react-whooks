@@ -11,6 +11,7 @@
     "strict": true,
     "paths": {
       "@/*": ["src/*"],
+      "react-whooks": ["src/index.ts"],
       "@@/*": ["src/.umi/*"]
     },
     "allowSyntheticDefaultImports": true

@@ -1,0 +1,64 @@
+.slideBanner {
+  .bannerWrapper {
+    position: relative;
+    .slideBannerWrapper {
+      min-height: 1px;
+      overflow: hidden;
+    }
+    .slideBannerContent {
+      height: 200px;
+      white-space: nowrap;
+      font-size: 0;
+    }
+    .slidePage {
+      display: inline-block;
+      height: 200px;
+      width: 100%;
+      line-height: 200px;
+      text-align: center;
+      font-size: 26px;
+      &.page1 {
+        background-color: #95b8d1;
+      }
+      &.page2 {
+        background-color: #dda789;
+      }
+      &.page3 {
+        background-color: #c3d899;
+      }
+      &.page4 {
+        background-color: #f2d4a7;
+      }
+    }
+  }
+  .dotsWrapper {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    .dot {
+      display: inline-block;
+      margin: 0 4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #eee;
+      &.active {
+        width: 20px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .btnWrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    button {
+      margin: 0 10px;
+      padding: 10px;
+      color: #fff;
+      border-radius: 4px;
+      background-color: #666;
+    }
+  }
+}
